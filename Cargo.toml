@@ -1,0 +1,15 @@
+[package]
+name = "candiscraper"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.32.0", features = [ "rt-multi-thread" ] }
+subxt = { git = "https://github.com/paritytech/subxt", branch = "master", features = [ "jsonrpsee" ] }
+sp-io = { git = "https://github.com/paritytech/polkadot-sdk", branch = "master" }
+polkadot-primitives = { git = "https://github.com/paritytech/polkadot-sdk", branch = "master" }
+polkadot-node-primitives = { git = "https://github.com/paritytech/polkadot-sdk", branch = "master" }
+parity-scale-codec = {}
+reqwest = "0.11.22"
